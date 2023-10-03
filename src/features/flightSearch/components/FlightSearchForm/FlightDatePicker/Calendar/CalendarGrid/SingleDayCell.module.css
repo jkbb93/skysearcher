@@ -1,0 +1,65 @@
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fill-whole {
+  background-color: var(--color-blue-light);
+}
+
+.fill-right {
+  background: linear-gradient(
+    to right,
+    transparent 50%,
+    var(--color-blue-light) 50%
+  );
+}
+
+.fill-left {
+  background: linear-gradient(
+    to left,
+    transparent 50%,
+    var(--color-blue-light) 50%
+  );
+}
+
+.today-marker::after {
+  content: "TODAY";
+  display: block;
+  position: absolute;
+  bottom: -14px;
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: var(--color-blue);
+}
+
+.button {
+  background: none;
+  padding: 0;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-fill {
+  background-color: var(--color-blue);
+  color: #ffffff;
+}
+
+.button-hollow {
+  border: 3px solid var(--color-blue);
+}
+
+.button:disabled {
+  color: inherit;
+  opacity: 0.2;
+  cursor: not-allowed;
+}

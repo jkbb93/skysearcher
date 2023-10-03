@@ -1,0 +1,10 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.header span {
+  text-align: center;
+  line-height: 36px;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,11 @@
+.accordion-group {
+  width: 100%;
+}
+
+.accordion-group > :first-child {
+  border-top: 1px solid lightgray;
+}
+
+.accordion-group > * {
+  border-bottom: 1px solid lightgray;
+}

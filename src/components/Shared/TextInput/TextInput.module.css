@@ -1,0 +1,23 @@
+.wrapper {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #eff1f2;
+}
+
+.wrapper:focus-within {
+  outline: 2px solid blue;
+}
+
+.input {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.input:focus {
+  outline: none;
+}

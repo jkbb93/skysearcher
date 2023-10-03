@@ -1,0 +1,22 @@
+.list {
+  padding: 16px 0 24px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.list li {
+  list-style: none;
+}
+
+.list li h3 {
+  font-size: 1.25rem;
+  margin: 0 0 8px;
+}
+
+@media (min-width: 769px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}

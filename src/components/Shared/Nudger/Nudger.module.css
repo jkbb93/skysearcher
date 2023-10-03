@@ -1,0 +1,40 @@
+.nudger {
+  display: inline-flex;
+}
+
+.nudger button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #e0e3e5;
+  border-radius: 8px;
+}
+
+.nudger button:hover {
+  filter: brightness(0.93);
+}
+
+.nudger button svg {
+  fill: rgb(13, 13, 13);
+}
+
+.nudger input {
+  font-size: 1rem;
+  font-weight: 700;
+  color: inherit;
+  width: 36px;
+  padding: 0;
+  margin: 0 2px;
+  text-align: center;
+  border: none;
+  cursor: default;
+}
+
+.nudger input:focus {
+  outline: none;
+}

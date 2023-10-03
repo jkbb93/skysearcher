@@ -1,0 +1,39 @@
+.button {
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.icon-wrapper svg {
+  fill: #545860;
+  width: 16px;
+}
+
+.button-value {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1rem;
+  color: inherit;
+}
+
+.button-value.placeholder {
+  color: #545860;
+}

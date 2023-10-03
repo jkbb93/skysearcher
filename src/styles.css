@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --color-black: rgb(13, 13, 13);
+  --color-navy: #05203c;
+  --color-blue: #0583d2;
+  --color-blue-hover: hsl(203, 95%, 30%);
+  --color-blue-light: #b8e3ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-black);
+  fill: var(--color-black);
+}
+
+button,
+input {
+  font-family: inherit;
+  color: inherit;
+}

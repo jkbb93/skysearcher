@@ -1,0 +1,37 @@
+.accordion {
+  width: 100%;
+}
+
+.toggler {
+  background: none;
+  border: none;
+  padding: 12px 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 16px;
+  column-gap: 16px;
+  cursor: pointer;
+}
+
+.toggler span {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: inherit;
+}
+
+.icon-wrapper {
+  width: 100%;
+  padding-top: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-wrapper svg {
+  width: 100%;
+  fill: inherit;
+}
+
+.content-wrapper {
+  overflow: hidden;
+}

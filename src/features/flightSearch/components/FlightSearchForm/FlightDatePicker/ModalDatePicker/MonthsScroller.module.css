@@ -1,0 +1,10 @@
+.month-list {
+  display: grid;
+  row-gap: 24px;
+  padding-top: 24px;
+}
+
+.month-heading {
+  font-size: 1.25rem;
+  margin: 0 16px 24px;
+}

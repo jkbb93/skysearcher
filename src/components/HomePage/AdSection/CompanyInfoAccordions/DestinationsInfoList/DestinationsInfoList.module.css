@@ -1,0 +1,29 @@
+.list {
+  padding: 0 0 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.list li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list li span:first-child {
+  margin-right: 16px;
+}
+
+@media (min-width: 513px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1025px) {
+  .list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

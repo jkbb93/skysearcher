@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+}
+
+.slot,
+.double-slot {
+  min-width: 0;
+  margin-right: 4px;
+}
+
+.slot {
+  flex: 1;
+}
+
+.double-slot {
+  flex: 2;
+}
+
+.slot:last-of-type {
+  margin-right: 8px;
+}

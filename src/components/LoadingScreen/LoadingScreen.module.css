@@ -1,0 +1,20 @@
+.modal {
+  background-color: var(--color-navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade 200ms linear forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content h1 {
+  color: #ffffff;
+}

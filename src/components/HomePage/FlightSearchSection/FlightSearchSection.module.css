@@ -1,0 +1,23 @@
+.section {
+  background-color: var(--color-navy);
+  width: 100%;
+  padding: 0 24px 24px;
+}
+
+.section h1 {
+  font-size: 2rem;
+  margin: 0 0 24px;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 0 32px 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding: 0 144px 48px;
+  }
+}

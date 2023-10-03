@@ -1,0 +1,30 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.slot,
+.double-slot {
+  min-width: 0;
+  margin-bottom: 2px;
+}
+
+.slot:first-of-type {
+  margin-bottom: 16px;
+}
+
+.double-slot {
+  display: flex;
+  gap: 2px;
+}
+
+.double-slot > :nth-child(1),
+.double-slot > :nth-child(2) {
+  flex: 50%;
+  min-width: 0;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 16px;
+}

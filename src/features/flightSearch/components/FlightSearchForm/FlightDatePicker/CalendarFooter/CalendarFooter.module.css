@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.prompt {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 769px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .prompt {
+    margin-bottom: 0;
+  }
+}

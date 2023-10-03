@@ -1,0 +1,43 @@
+.input-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: text;
+  overflow: hidden;
+}
+
+.label,
+.input {
+  display: block;
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  cursor: inherit;
+}
+
+.input {
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  color: inherit;
+  opacity: 0.45;
+}
+
+.input:focus {
+  outline: none;
+}

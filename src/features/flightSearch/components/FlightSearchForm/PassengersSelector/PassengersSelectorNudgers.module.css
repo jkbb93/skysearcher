@@ -1,0 +1,34 @@
+.wrapper {
+  padding-top: 24px;
+}
+
+.nudger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nudger:first-child {
+  margin-bottom: 24px;
+}
+
+.nudger label {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-top: 0;
+  }
+
+  .nudger {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nudger label {
+    margin-right: 24px;
+  }
+}
