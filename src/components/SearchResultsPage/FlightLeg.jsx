@@ -24,7 +24,8 @@ const getDayOverflow = (departureTime, arrivalTime) => {
   // Convert ms to days (1 day = 24*60*60*1000 milliseconds)
   const differenceInDays = differenceInMs / (24 * 60 * 60 * 1000);
 
-  return +differenceInDays;
+  // Rounding in case of precision errors
+  return Math.round(differenceInDays);
 };
 
 function FlightLeg({ flightData, type }) {
