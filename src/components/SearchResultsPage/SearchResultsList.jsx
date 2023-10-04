@@ -1,21 +1,18 @@
-import { useFlightSearchResults } from "../../features/flightSearch";
 import SearchResultCard from "./SearchResultCard";
 import styles from "./SearchResultsList.module.css";
 
-function SearchResultsList() {
-  const { data } = useFlightSearchResults();
-
+function SearchResultsList({ results }) {
   const handleSelectResult = (selectedResultData) => {
     console.log(selectedResultData);
   };
 
-  const results = data.map((result) => (
+  const listItems = results.map((result) => (
     <li key={result.id}>
       <SearchResultCard data={result} onSelect={handleSelectResult} />
     </li>
   ));
 
-  return <ul className={styles.list}>{results}</ul>;
+  return <ul className={styles.list}>{listItems}</ul>;
 }
 
 export default SearchResultsList;
