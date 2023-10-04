@@ -16,7 +16,6 @@ function ModalLocationSearch({
   const {
     query,
     handleQueryChange,
-    handleClearQuery,
     status,
     suggestions,
     selectedAirportIATA,

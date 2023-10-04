@@ -15,10 +15,8 @@ function ModalOriginSearch({
   const {
     query,
     handleQueryChange,
-    handleClearQuery,
     status,
     suggestions,
-    selectedAirportIATA,
     handleSelectSuggestion
   } = useLocationAutoSuggest({
     query: passedQuery,
