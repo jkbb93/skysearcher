@@ -9,7 +9,7 @@ function SearchResultsPage({ onNavigateBack: handleNavigateBack }) {
 
   return (
     <MainPageContentWrapper>
-      <div style={{padding: "16px 0 24px"}}>
+      <div style={{padding: "16px 16px 24px", maxWidth: "700px", width: "100%"}}>
         <div style={{display: "flex", justifyContent: "space-between"}}>
           <ResultsSummary numberOfResults={data.length} />
           <TextButton onClick={handleNavigateBack}>Back</TextButton>

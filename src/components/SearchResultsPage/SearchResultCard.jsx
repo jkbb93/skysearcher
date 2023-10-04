@@ -13,14 +13,16 @@ function SearchResultCard({ data, onSelect: handleSelect }) {
     <Card>
       <div className={styles["card-content"]} onClick={handleCardClick}>
         <div className={styles["flight-info"]}>
-            <FlightLeg flightData={data.outbound} type="outbound" />
-            <FlightLeg flightData={data.return} type="return" />
+          <FlightLeg flightData={data.outbound} type="outbound" />
+          <FlightLeg flightData={data.return} type="return" />
         </div>
         <div className={styles.cta}>
-          <span className={styles["price-label"]}>Total price</span>
-          <span className={styles.price}>
-            {formatPrice(data.price.currency, data.price.total)}
-          </span>
+          <div className={styles.price}>
+            <span className={styles["price-label"]}>Total price</span>
+            <span className={styles["price-total"]}>
+              {formatPrice(data.price.currency, data.price.total)}
+            </span>
+          </div>
           <Button onClick={handleCardClick}>Select</Button>
         </div>
       </div>

@@ -72,21 +72,25 @@ function FlightLeg({ flightData, type }) {
         </div>
         <span className={styles["detail-span"]}>Direct</span>
       </div>
-      <div className={styles.destination}>
+        <div className={styles.destination}>
         <div className={styles["day-overflow-wrapper"]}>
           <span className={styles["takeoff-time"]}>{formattedArrivalTime}</span>
           {dayOverflow > 0 && (
-            <span className={`${styles["detail-span"]} ${styles["day-overflow"]}`}>+{dayOverflow}</span>
-          )}
+              <span
+                className={`${styles["detail-span"]} ${styles["day-overflow"]}`}
+              >
+                +{dayOverflow}
+              </span>
+            )}
+                  </div>
+          <span
+            className={`${styles["detail-span"]} ${
+              styles.iata
+            } ${iataHighlightClass("return")}`}
+          >
+            {destinationIATA}
+          </span>
         </div>
-        <span
-          className={`${styles["detail-span"]} ${
-            styles.iata
-          } ${iataHighlightClass("return")}`}
-        >
-          {destinationIATA}
-        </span>
-      </div>
     </div>
   );
 }
