@@ -1,0 +1,12 @@
+.list {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    width: 700px;
+}
+
+.list li {
+    list-style: none;
+    width: 100%;
+}

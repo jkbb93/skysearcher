@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useControlledState } from "../../../../../components/Shared/hooks";
+import { useControlledState } from "../../../../../hooks";
 import useLocationQuery from "./useLocationQuery";
 
 function useLocationAutoSuggest({

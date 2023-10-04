@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useControlledState from "../hooks/useControlledState";
+import useControlledState from "../../../hooks/useControlledState";
 import MobileModalWindow from "./MobileModalWindow";
 
 function MobileModal({

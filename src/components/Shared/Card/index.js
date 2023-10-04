@@ -1,2 +1,2 @@
-import Card from "./CardAlt";
+import Card from "./Card";
 export default Card;

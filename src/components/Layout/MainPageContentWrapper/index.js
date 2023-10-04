@@ -1,2 +1,2 @@
-import MainContent from "./MainContent";
-export default MainContent;
+import MainPageContentWrapper from "./MainPageContentWrapper";
+export default MainPageContentWrapper;

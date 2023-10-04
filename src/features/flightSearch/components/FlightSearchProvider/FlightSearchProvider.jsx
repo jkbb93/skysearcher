@@ -9,7 +9,7 @@ import {
 
 function FlightSearchProvider({ children }) {
   const [values, updateSearchValues] = useFlightSearchFormState();
-  const { data, isLoading, error, getRequest } = useAPIGetRequest();
+  const { data, isLoading, error, getRequest, clearData } = useAPIGetRequest();
 
   const submitSearch = useCallback(() => {
     const { flightSearch: baseURL } = endpoints;
@@ -31,9 +31,10 @@ function FlightSearchProvider({ children }) {
     () => ({
       data,
       isLoading,
-      error
+      error,
+      clearData
     }),
-    [data, isLoading, error]
+    [data, isLoading, error, clearData]
   );
 
   return (

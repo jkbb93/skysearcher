@@ -23,11 +23,14 @@ function useAPIGetRequest() {
     setIsLoading(false);
   }, []);
 
+  const clearData = useCallback(() => setData(null), []);
+
   return {
     data,
     isLoading,
     error,
-    getRequest
+    getRequest,
+    clearData
   };
 }
 

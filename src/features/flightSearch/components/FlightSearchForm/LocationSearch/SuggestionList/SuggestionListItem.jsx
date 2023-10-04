@@ -1,4 +1,4 @@
-import { ReactComponent as PlaneIcon } from "./plane-solid.svg";
+import { ReactComponent as PlaneIcon } from "../../../../../../assets/icons/plane-solid.svg";
 import HighlightedSpan from "../../../../../../components/Shared/HighlightedSpan";
 import styles from "./SuggestionListItem.module.css";
 

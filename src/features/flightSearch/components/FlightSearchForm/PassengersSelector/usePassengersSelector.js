@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { useControlledState } from "../../../../../components/Shared/hooks";
+import { useControlledState } from "../../../../../hooks";
 
 function usePassengersSelector({
   adultPassengers: passedAdultPassengers,
