@@ -1,5 +1,7 @@
+const baseURL = process.env.REACT_APP_API_URL;
+
 const endpoints = {
-  flightSearch: "https://fork-malleable-honeydew.glitch.me/search"
+  flightSearch: `${baseURL}/search`
 };
 
 export default endpoints;

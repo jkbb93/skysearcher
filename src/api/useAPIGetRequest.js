@@ -7,6 +7,7 @@ function useAPIGetRequest() {
 
   const getRequest = useCallback(async (url) => {
     try {
+      console.log(url);
       setIsLoading(true);
       const response = await fetch(url);
 
@@ -17,6 +18,7 @@ function useAPIGetRequest() {
       const responseData = await response.json();
       setData(responseData);
     } catch (err) {
+      console.log(err);
       setError(err);
     }
 
