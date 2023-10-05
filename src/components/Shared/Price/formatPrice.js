@@ -1,4 +1,4 @@
-function formatPrice(currency, value) {
+function formatPrice(value, currency) {
     if (typeof value !== 'number' || isNaN(value)) {
         throw new Error('Value must be a valid number.');
     }

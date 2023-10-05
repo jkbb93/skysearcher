@@ -1,8 +1,8 @@
 import Card from "../Shared/Card";
+import FlightLeg from "./FlightLeg/FlightLeg";
+import Price from "../Shared/Price";
 import Button from "../Shared/Button";
-import formatPrice from "./formatPrice";
 import styles from "./SearchResultCard.module.css";
-import FlightLeg from "./FlightLeg";
 
 function SearchResultCard({ data, onSelect: handleSelect }) {
   const handleCardClick = () => {
@@ -19,9 +19,11 @@ function SearchResultCard({ data, onSelect: handleSelect }) {
         <div className={styles.cta}>
           <div className={styles.price}>
             <span className={styles["price-label"]}>Total price</span>
-            <span className={styles["price-total"]}>
-              {formatPrice(data.price.currency, data.price.total)}
-            </span>
+            <Price
+              value={data.price.total}
+              currency={data.price.currency}
+              className={styles["price-total"]}
+            />
           </div>
           <Button onClick={handleCardClick}>Select</Button>
         </div>

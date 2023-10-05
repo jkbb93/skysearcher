@@ -1,0 +1,30 @@
+.journey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.journey span {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #545860;
+  }
+
+.graphic {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .line {
+    background-color: var(--color-black);
+    height: 2px;
+    flex-grow: 1;
+  }
+  
+  .graphic svg {
+    width: 16px;
+    margin-left: 2px;
+    fill: #545860;
+  }

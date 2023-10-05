@@ -1,0 +1,27 @@
+.leg {
+  width: 100%;
+  display: flex;
+}
+
+.airline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-right: 16px;
+}
+
+.airline span {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #545860;
+}
+
+.stop {
+  flex: 1;
+}
+
+.journey {
+  flex: 2;
+}
