@@ -1,4 +1,4 @@
-import { ReactComponent as CircleXMarkIcon } from "./circle-xmark-solid.svg";
+import { ReactComponent as CircleXMarkIcon } from "../../../../../assets/icons/circle-xmark-solid.svg";
 import styles from "./SearchControlClearButton.module.css";
 
 function SearchControlClearButton({ onClick: handleClick }) {

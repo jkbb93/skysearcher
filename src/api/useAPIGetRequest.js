@@ -4,6 +4,7 @@ function useAPIGetRequest() {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const isError = !!error;
 
   const getRequest = useCallback(async (url) => {
     try {
@@ -27,9 +28,10 @@ function useAPIGetRequest() {
   const clearData = useCallback(() => setData(null), []);
 
   return {
-    data,
     isLoading,
+    isError,
     error,
+    data,
     getRequest,
     clearData
   };

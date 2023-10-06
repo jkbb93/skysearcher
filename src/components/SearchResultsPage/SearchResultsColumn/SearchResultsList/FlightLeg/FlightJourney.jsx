@@ -1,4 +1,4 @@
-import { ReactComponent as PlaneIcon } from "../../../assets/icons/plane-solid.svg";
+import { ReactComponent as PlaneIcon } from "../../../../../assets/icons/plane-solid.svg";
 import styles from "./FlightJourney.module.css";
 
 function FlightJourney({ durationHours = 0, durationMinutes = 0, flightType, className }) {

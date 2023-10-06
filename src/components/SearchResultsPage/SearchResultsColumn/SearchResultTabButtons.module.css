@@ -1,0 +1,45 @@
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2px;
+}
+
+.button {
+  border: none;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(37, 32, 31, 0.3);
+  border-radius: 4px;
+}
+
+.button span {
+  text-align: left;
+  color: var(--color-grey-dark);
+}
+
+.button span.heading {
+  font-size: 0.875rem;
+}
+
+.button span.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-blue);
+}
+
+.button span.duration {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.button.active {
+  background-color: var(--color-navy);
+}
+
+.button.active span {
+  color: #ffffff;
+}

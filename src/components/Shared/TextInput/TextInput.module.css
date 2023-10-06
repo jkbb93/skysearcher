@@ -1,7 +1,9 @@
 .wrapper {
   padding: 8px;
   border-radius: 8px;
+  border: 1px solid lightgray;
   background-color: #eff1f2;
+  display: flex;
 }
 
 .wrapper:focus-within {
@@ -9,10 +11,11 @@
 }
 
 .input {
+  flex-grow: 1;
   border: none;
   background: none;
+  padding: 0;
   font-size: 1rem;
-  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -20,4 +23,20 @@
 
 .input:focus {
   outline: none;
+}
+
+.clear {
+  border: none;
+  background: none;
+  width: 24px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.clear svg {
+  width: 75%;
+  fill: var(--color-grey-dark);
 }

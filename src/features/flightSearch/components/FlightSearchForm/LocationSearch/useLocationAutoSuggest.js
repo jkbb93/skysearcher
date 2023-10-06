@@ -34,8 +34,8 @@ function useLocationAutoSuggest({
     clearData: clearSuggestions
   } = useLocationQuery();
 
-  const handleQueryChange = (event) => {
-    setSyncedQuery(event.target.value);
+  const handleQueryChange = (newValue) => {
+    setSyncedQuery(newValue);
 
     if (selectedAirportIATA) {
       setSyncedSelectedAirportIATA("");

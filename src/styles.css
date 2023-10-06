@@ -6,6 +6,8 @@
   --color-blue: #0583d2;
   --color-blue-hover: hsl(203, 95%, 30%);
   --color-blue-light: #b8e3ff;
+  --color-grey-light: #eff1f2;
+  --color-grey-dark: #545860;
 }
 
 *,
