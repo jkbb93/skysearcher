@@ -1,4 +1,4 @@
-import SearchResultTabButtons from "./SearchResultTabButtons";
+// import SearchResultTabButtons from "./SearchResultTabButtons";
 import SearchResultsList from "./SearchResultsList";
 import styles from "./SearchResultsColumn.module.css";
 
