@@ -5,6 +5,7 @@ import styles from "./TextInput.module.css";
 const TextInput = forwardRef(function TextInput(
   {
     id,
+    name = "",
     value: passedValue = "",
     onChange: onChangeCallback,
     placeholder,
@@ -49,6 +50,7 @@ const TextInput = forwardRef(function TextInput(
       <input
         ref={assignRefs}
         id={id}
+        name={name}
         type="text"
         value={value}
         placeholder={placeholder}

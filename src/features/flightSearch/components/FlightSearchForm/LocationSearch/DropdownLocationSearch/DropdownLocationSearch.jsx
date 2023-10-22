@@ -14,7 +14,7 @@ const DropdownLocationSearch = forwardRef(function DropdownLocationSearch(
     query: passedQuery,
     onQueryChange: onQueryChangeCallback,
     selectedLocation,
-    onSelectionChange: handleSelectionChange
+    onSelectionChange: handleSelectionChange,
   },
   forwardedRef
 ) {
@@ -26,12 +26,12 @@ const DropdownLocationSearch = forwardRef(function DropdownLocationSearch(
     status,
     handleQueryChange: handleQueryChangeCallback,
     handleClearQuery,
-    handleSelectSuggestion: handleSelectSuggestionCallback
+    handleSelectSuggestion: handleSelectSuggestionCallback,
   } = useLocationAutoSuggest({
     query: passedQuery,
     onQueryChange: onQueryChangeCallback,
     selectedAirportIATA: selectedLocation,
-    onSelectionChange: handleSelectionChange
+    onSelectionChange: handleSelectionChange,
   });
 
   const handleQueryChange = (event) => {
@@ -39,7 +39,7 @@ const DropdownLocationSearch = forwardRef(function DropdownLocationSearch(
       setDropdownOpen(true);
     }
 
-    handleQueryChangeCallback(event);
+    handleQueryChangeCallback(event.target.value);
   };
 
   const openDropdown = () => {

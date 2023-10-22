@@ -8,7 +8,7 @@ function useLocationAutoSuggest({
   selectedAirportIATA: passedSelectedAirportIATA,
   onSelectionChange: onSelectionChangeCallback,
   minQueryLength = 1,
-  debounce = 200
+  debounce = 200,
 }) {
   const [query, setQuery] = useState("");
   const [selectedAirportIATA, setSelectedAirportIATA] = useState("");
@@ -17,21 +17,21 @@ function useLocationAutoSuggest({
     internalState: query,
     setInternalState: setQuery,
     externalState: passedQuery,
-    setExternalState: onQueryChangeCallback
+    setExternalState: onQueryChangeCallback,
   });
 
   const setSyncedSelectedAirportIATA = useControlledState({
     internalState: selectedAirportIATA,
     setInternalState: setSelectedAirportIATA,
     externalState: passedSelectedAirportIATA,
-    setExternalState: onSelectionChangeCallback
+    setExternalState: onSelectionChangeCallback,
   });
 
   const {
     data: suggestions,
     status,
     fetch: fetchSuggestions,
-    clearData: clearSuggestions
+    clearData: clearSuggestions,
   } = useLocationQuery();
 
   const handleQueryChange = (newValue) => {
@@ -73,7 +73,7 @@ function useLocationAutoSuggest({
     status,
     handleQueryChange,
     handleClearQuery,
-    handleSelectSuggestion
+    handleSelectSuggestion,
   };
 }
 
